@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Fitnes</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset  */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url(123.jpg) no-repeat;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 25px;
+        color: white;
+        left: 7px;
+        text-size-adjust: 5px;
+    }
+
+    .left img {
+        width: 134px;
+        filter: invert(100%);
+
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .mid {
+        display: block;
+        width: 49%;
+        margin: 16px auto;
+        /* border: 2px solid black; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        /* border: 2px solid blanchedalmond; */
+        display: inline-block;
+        color: gray;
+       
+        
+    }
+
+    .navbar {
+        display: inline-block;
+        background-color: black;
+    border-radius: 30px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+        border: white;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(110, 82, 82);
+    }
+
+    .container {
+        border: 2px solid black;
+        margin: 106px 88px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input {
+        font-family: 'Ballo 2', cursive;
+        text-align: center;
+        display: block;
+        width: 249px;
+        padding: 7px;
+        border: 2px solid white;
+        margin: 1px auto;
+        font-size: 15px;
+        border-radius: 16px;
+        top: 34px;
+        background-color: black; 
+        color: white;
+    }
+
+    .container h1 {
+        text-align: center;
+        margin: 0px ;
+        color: white;
+        border: black;
+        
+    }
+
+    .container button {
+        display: block;
+        width: 59%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/sunny.jfif" alt="">
+            <div>sunny logo</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="Active">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Contact us</a> </li>
+                <li><a href="#">Services</a> </li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>This is my first project of Html and CSS </h1>
+        <form action="noaation.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your place">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
